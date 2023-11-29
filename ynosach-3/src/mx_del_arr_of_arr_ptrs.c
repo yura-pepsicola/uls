@@ -8,7 +8,7 @@ void mx_del_arr_of_arr_ptrs(t_li ***args) {
         if (del_arr[i]->err)
             mx_strdel(&del_arr[i]->err);
         if (del_arr[i]->open != NULL)
-            mx_del_arr_arr(&del_arr[i]->open);
+            mx_del_arr_of_arr_ptrs(&del_arr[i]->open);
         free(del_arr[i]);
         del_arr[i] = NULL;
     }

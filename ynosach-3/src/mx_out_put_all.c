@@ -15,7 +15,7 @@ void mx_out_put_all(t_li ***args, st_fl *fl) {
             if (fl->files == 1 && (*args)[i+1])
                 mx_printchar('\n');
         }
-        mx_del_arr_arr(args);
+        mx_del_arr_of_arr_ptrs(args);
     }
 }
 
