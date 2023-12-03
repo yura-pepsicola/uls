@@ -153,6 +153,8 @@ char *mx_get_high(t_li *print);
 char *mx_low_to_hex(char *minor);
 char *mx_get_low(t_li *print);
 void mx_out_put_all(t_li ***args, st_fl *fl);
+void mx_print_tab(int len, int maxlen)
+
 //Sort
 void mx_sorting(t_li ***names, st_fl *fl);
 int mx_get_arr_size(t_li **names);
