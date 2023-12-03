@@ -81,6 +81,9 @@ void mx_nulloutput(st_fl **fl);
 void mx_err_flag(st_fl **fl, char flag);
 void mx_del_arr_of_arr_ptrs(t_li ***args);
 void mx_join(char **res, char *s2);
+t_li *mx_create_fn(t_li *arg);
+void mx_create_desc(t_li ***files, t_li ***dirs, t_li ***errors, t_li ***args);
+s_type *mx_create_int();
 
 //Args
 t_li **mx_get_args(int argc, char **argv, int i);
@@ -89,6 +92,7 @@ t_li **mx_get_args(int argc, char **argv, int i);
 void mx_dir_init(t_li ***args, st_fl *fl);
 void mx_open_directory(t_li ***args, st_fl *fl);
 int mx_check_directory(char *name, st_fl *fl);
+void mx_create_dir(t_li **args, s_type *num, t_li ***files, t_li ***dirs);
 
 //File
 t_li *mx_new_file_node(t_li *arg);
