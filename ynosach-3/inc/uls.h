@@ -132,6 +132,7 @@ int mx_output_sec_g(t_li *args);
 void mx_name_output(t_li *args);
 void mx_print_names_g(t_li **names, int maxlen, int wincol, st_fl *fl);
 void mx_output_flag_1(t_li **names, st_fl *fl);
+void mx_output_flag_g(t_li **names, st_fl *fl);
 
 //Print
 void mx_print_all(t_li *print, t_sz *size, st_fl *fl);
